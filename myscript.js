@@ -1,5 +1,5 @@
-var root = new Vue({
-    el: "#root",
+var app = new Vue({
+    el: "#app",
     data: {
         contacts: [
             {
