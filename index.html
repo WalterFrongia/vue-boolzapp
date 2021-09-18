@@ -29,12 +29,12 @@
     <!-- SFONDO MAIN WEB APP, CHE CONTIENE IL LAYOUT APP -->
     <main class="my-wrapping-main">
 
-        <!-- WEB APP LAYOUT -->
-        <div class="container my-app-container myborder">
-            <!-- IMPOSTAZIONI E PROFILO PERSONALE CON ELENCO DELLE CHAT -->
-            <div class="row">
-                <div class="col-5 myborder">
-                    <div class="row">
+        <!-- WEB APP LAYOUT CONTENITORE -->
+        <div id="app" class="container my-app-container my-border">
+            <div class="row bg-white">
+                <div class="col-5">
+                    <!-- IMMAGINE UTENTE -->
+                    <div class="row pt-3 pb-3">
                         <div class="col-6">
                             <span>img</span>
                             <span>nome</span>
@@ -47,12 +47,41 @@
                             <span>icone</span>
                         </div>
                     </div>
+
+                    <!-- SEZIONE NOTFICHE -->
+                    <div class="row pt-2 pb-2 my-border-top ">
+                        <div class="col-12">
+                            <i class="fas fa-bell-slash"></i>
+                            <span>Notifiche</span>
+                        </div>
+                    </div>
+
+                    <!-- SEZIONE CHAT (SEARCHBAR/BOTTOM) -->
+                    <div class="row pb-1 pt-2 my-border-top">
+                        <div class="col-2">
+                            <button class="my-button-search"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="col-10">
+                            <input class="my-search-bar" type="text">
+                        </div>
+                    </div>
+
+                    <!-- SEZIONE ELENCO CHAT -->
+                    <div class="row my-border-top">
+                        <div class="col-12">
+                            <ul class="list-unstyled">
+                                <li class=" p-2 my-chat-img"v-for ="(element, index) in contacts">
+                                    <img src="img/avatar_1.jpg" alt=""> {{element.name}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- PARTE DESTRA CON MESSAGISTICA E IMPOSTAZIONI PER LA CHAT IN NAVBAR -->
-                
+
                 <!-- IMPOSTAZIONI NAV BAR CON MESSAGISTICA APERTA E IMPOSTAZIONI CHAT -->
-                <div class="col-7 myborder">
+                <div class="col-7 my-border-left">
                     <div class="row">
                         <div class="col-12">
                             <div class="row my-chat-nav-bar">

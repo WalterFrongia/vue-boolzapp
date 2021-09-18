@@ -3,16 +3,46 @@ body{
     width: 100vw;
 }
 
+/* BORDI PER COSTRUIRE IL LAYOUT DELLA PAGINA */
+
+.my-border-top{
+    border-top:2px solid black;
+}
+
+.my-border{
+    border:2px solid black;
+}
+
+.my-border-left{
+    border-left:2px solid green;
+}
+
+/* STRUTTURA LAYOUT WEB APP */
 .my-wrapping-header{
-    background-color: rgb(194, 168, 168);
+    background-color: rgb(32, 124, 120);
     height: 20%;
 }
 
 .my-wrapping-main{
-    background-color: rgb(110, 110, 156);
+    background-color: rgb(218, 216, 226);
     height: 80%;
 }
 
-.myborder{
-    border: 3px solid red;
+/* LAYOUT WEB APP */
+
+.my-button-search{
+    padding:2px 30px;
+    color:grey;
+    background-color: white;
+    border:1px solid rgb(221, 215, 215);
+}
+
+.my-search-bar{
+    width:100%;
+    color:grey;
+}
+
+.my-chat-img>img{
+    width:10%;
+    border-radius:50%;
 }
