@@ -3,29 +3,16 @@ body{
     width: 100vw;
 }
 
-.my-border{
-    border:10px solid yellow;
-}
-
-.my-bar{
+.my-wrapping-header{
+    background-color: rgb(194, 168, 168);
     height: 20%;
-    background-color: red;
 }
 
-.my-body{
+.my-wrapping-main{
+    background-color: rgb(110, 110, 156);
     height: 80%;
-    background-color: green;
 }
 
-.my-container-app{
-    background-color: white;
-    border:3px solid black;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.my-chat{
-    background-color: blue;
+.myborder{
+    border: 3px solid red;
 }
