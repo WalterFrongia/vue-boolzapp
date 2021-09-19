@@ -7,15 +7,6 @@ body{
     color:rgb(139, 136, 136);
 }
 /* BORDI PER COSTRUIRE IL LAYOUT DELLA PAGINA */
-
-.my-border-top{
-    border-top:2px solid black;
-}
-
-.my-border{
-    border:2px solid black;
-}
-
 .my-border-right{
     border-right:2px solid grey;
 }
