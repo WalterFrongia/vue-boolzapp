@@ -30,6 +30,14 @@ body{
 
 /* LAYOUT WEB APP */
 
+
+.my-app-container{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .my-button-search{
     padding:2px 30px;
     color:grey;
@@ -45,4 +53,9 @@ body{
 .my-chat-img>img{
     width:10%;
     border-radius:50%;
+}
+
+.my-chat-section{
+    padding-bottom:200px;
+    overflow-y:scroll;
 }
