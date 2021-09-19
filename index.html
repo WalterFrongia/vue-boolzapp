@@ -30,44 +30,47 @@
     <main class="my-wrapping-main">
 
         <!-- WEB APP LAYOUT CONTENITORE -->
-        <div id="app" class="container my-app-container my-border">
+        <div id="app" class="container my-app-container">
             <div class="row bg-white">
                 <div class="col-5">
                     <!-- IMMAGINE UTENTE -->
-                    <div class="row pt-3 pb-3">
-                        <div class="col-6">
-                            <span>img</span>
-                            <span>nome</span>
+                    <div class="row d-flex align-items-center justify-content-between pt-2 pb-2 my-container-grey my-border-right">
+                        <div class="col-6 my-img-user">
+                            <img src="img/avatar_io.jpg" alt="">
+                            <span>Nome Utente</span>
                         </div>
 
                         <!-- ICONE IMPOSTAZIONI UTENTE -->
-                        <div class="col-6 d-flex justify-content-end">
-                            <span>icone</span>
-                            <span>icone</span>
-                            <span>icone</span>
+                        <div class="col-2 d-flex justify-content-end justify-content-between">
+                            <i class="fas fa-circle-notch grey-color"></i>
+                            <i class="fas fa-comment-alt grey-color"></i>
+                            <i class="fas fa-ellipsis-v grey-color"></i>
                         </div>
                     </div>
 
                     <!-- SEZIONE NOTFICHE -->
-                    <div class="row pt-2 pb-2 my-border-top ">
-                        <div class="col-12">
-                            <i class="fas fa-bell-slash"></i>
-                            <span>Notifiche</span>
+                    <div class="row pb-2 pt-2 my-notification-section">
+                        <div class="col-1">
+                            <i class="fas fa-bell-slash" id="my-notification-icon"></i>
+                        </div>
+                        <div class="col-5 pt-2">
+                            <p class="my-notification-text">Ricevi notifiche di nuovi messaggi</p>
+                            <p id="my-notification-text-underline"> Attiva Notifiche desktop</p>
                         </div>
                     </div>
 
                     <!-- SEZIONE CHAT (SEARCHBAR/BOTTOM) -->
-                    <div class="row pb-1 pt-2 my-border-top">
+                    <div class="row pb-1 pt-2 my-search-section">
                         <div class="col-2">
-                            <button class="my-button-search"><i class="fas fa-search"></i></button>
+                            <button class="my-button-search"><i class="fas fa-search grey-color"></i></button>
                         </div>
                         <div class="col-10">
-                            <input class="my-search-bar" type="text">
+                            <input class="my-search-bar" type="text" placeholder="Cerca o inizia una nuova chat">
                         </div>
                     </div>
 
                     <!-- SEZIONE ELENCO CHAT -->
-                    <div class="row my-chat-section my-border-top">
+                    <div class="row my-chat-section">
                         <div class="col-12">
                             <ul class="list-unstyled">
                                 <li class=" p-2 my-chat-img"v-for ="(element, index) in contacts">
@@ -81,21 +84,35 @@
                 <!-- PARTE DESTRA CON MESSAGISTICA E IMPOSTAZIONI PER LA CHAT IN NAVBAR -->
 
                 <!-- IMPOSTAZIONI NAV BAR CON MESSAGISTICA APERTA E IMPOSTAZIONI CHAT -->
-                <div class="col-7 my-border-left">
-                    <div class="row">
+                <div class="col-7 my-container-chat">
+                    <div class="row d-flex align-items-center pb-2 pt-2 my-container-grey">
                         <div class="col-12">
-                            <div class="row my-chat-nav-bar">
-                                <div class="col-6 ">
-                                    <span>img</span>
+                            <div class="row justify-content-between my-chat-nav-bar">
+                                <div class="col-6  my-img-chatting-user ">
+                                    <img src="img/avatar_1.jpg" alt="">
                                     <span>descrizione</span>
                                 </div>
 
                                 <!-- IMPOSTAZIONI CHAT -->
-                                <div class="col-6 d-flex justify-content-end">
-                                    <span>icone</span>
-                                    <span>icone</span>
-                                    <span>icone</span>
+                                <div class="col-2 d-flex align-items-center justify-content-end justify-content-between ">
+                                    <i class="fas fa-search grey-color"></i>
+                                    <i class="fas fa-paperclip grey-color"></i>
+                                    <i class="fas fa-ellipsis-v grey-color"></i>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row my-container-messages">
+                        <div class="col-12">
+                            <div class="my-chat-container">
+                                <h1>MESSAGGI</h1>
+                                <h1>MESSAGGI</h1>
+                                <h1>MESSAGGI</h1>
+                                <h1>MESSAGGI</h1>
+                                <h1>MESSAGGI</h1>
+                                <h1>MESSAGGI</h1>
+                                <h1>MESSAGGI</h1>
                             </div>
                         </div>
                     </div>

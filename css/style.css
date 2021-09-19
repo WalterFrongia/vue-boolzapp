@@ -3,6 +3,9 @@ body{
     width: 100vw;
 }
 
+.grey-color{
+    color:rgb(139, 136, 136);
+}
 /* BORDI PER COSTRUIRE IL LAYOUT DELLA PAGINA */
 
 .my-border-top{
@@ -13,8 +16,8 @@ body{
     border:2px solid black;
 }
 
-.my-border-left{
-    border-left:2px solid green;
+.my-border-right{
+    border-right:2px solid grey;
 }
 
 /* STRUTTURA LAYOUT WEB APP */
@@ -38,6 +41,42 @@ body{
     transform: translate(-50%, -50%);
 }
 
+.my-container-grey{
+    background-color: rgb(236, 235, 235);
+}
+
+.my-img-user>img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+.my-notification-section{
+    background-color: rgb(126, 218, 247);
+}
+
+#my-notification-icon{
+    background-color: white;
+    color:rgb(126, 218, 247);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.my-notification-text{
+    font-size: 13px;
+    line-height: 3px;
+}
+
+#my-notification-text-underline{
+    font-size: 10px;
+    text-decoration: underline;
+    line-height: 3px;
+    color:rgb(139, 136, 136);
+}
+
+.my-search-section{
+    background-color:rgb(233, 233, 233); ;
+}
+
 .my-button-search{
     padding:2px 30px;
     color:grey;
@@ -58,4 +97,16 @@ body{
 .my-chat-section{
     padding-bottom:200px;
     overflow-y:scroll;
+}
+
+/* SEZIONE CHAT  */
+
+.my-img-chatting-user>img{
+    width: 14%;
+    border-radius: 50%;
+}
+
+.my-container-messages{
+    overflow-y: scroll;
+    height: 70%;
 }
