@@ -98,6 +98,10 @@ body{
     background-color: rgb(219, 215, 215);
 }
 
+.my-list-chat>li.active{
+    background-color: grey;
+}
+
 /* SEZIONE CHAT  */
 
 .my-img-chatting-user>img{

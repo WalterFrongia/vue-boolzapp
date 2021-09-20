@@ -73,7 +73,7 @@
                     <div class="row my-chat-section">
                         <div class="col-12 ps-0 pe-0">
                             <ul class="list-unstyled my-list-chat">
-                                <li class=" p-2 my-chat-img my-border-bottom" v-for ="(element, index) in contacts">
+                                <li class=" p-2 my-chat-img my-border-bottom" :class="(index == chatIndex) ? 'active' : '' " @click="selectedChat(index)" v-for ="(element, index) in contacts">
                                     <img :src="'img/avatar' + element.avatar + '.jpg'"> {{element.name}}
                                 </li>
                             </ul>

@@ -87,10 +87,14 @@ var app = new Vue({
                 ],
             },
         ],
+
+        chatIndex : 0 ,
     },
 
     methods: {
-
+        selectedChat: function(index){
+            this.chatIndex=index
+        }
     },
 });
 
