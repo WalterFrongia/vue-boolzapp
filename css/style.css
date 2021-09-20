@@ -11,6 +11,10 @@ body{
     border-right:2px solid grey;
 }
 
+.my-border-bottom{
+    border-bottom: 1px solid rgb(139, 136, 136);;
+}
+
 /* STRUTTURA LAYOUT WEB APP */
 .my-wrapping-header{
     background-color: rgb(32, 124, 120);
@@ -27,7 +31,7 @@ body{
 
 .my-app-container{
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -88,6 +92,10 @@ body{
 .my-chat-section{
     padding-bottom:200px;
     overflow-y:scroll;
+}
+
+.my-list-chat>li:hover{
+    background-color: rgb(219, 215, 215);
 }
 
 /* SEZIONE CHAT  */
