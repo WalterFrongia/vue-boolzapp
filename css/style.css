@@ -115,6 +115,22 @@ body{
     height: 80%;
 }
 
+.my-container-user-message{
+    background-color: white;
+    border-radius: 10px;
+    font-size:15px;
+    padding:20px 40px 20px 20px;
+    margin-bottom: 5px;
+}
+
+.my-container-my-message{
+    background-color: rgb(201, 247, 201);
+    border-radius:10px;
+    font-size:15px;
+    padding:20px 40px 20px 20px;
+    margin-bottom: 5px;
+}
+
 .my-messages-options{
     height: 10%;
     background-color:rgb(241, 236, 229);

@@ -89,7 +89,7 @@
                         <div class="col-12">
                             <div class="row justify-content-between my-chat-nav-bar">
                                 <div class="col-6  my-img-chatting-user ">
-                                    <img src="img/avatar_1.jpg" alt="">
+                                    <img :src="'img/avatar' + contacts[chatIndex].avatar + '.jpg'">
                                     <span>descrizione</span>
                                 </div>
 
@@ -107,7 +107,21 @@
                     <div class="row my-container-messages">
                         <div class="col-12">
                             <div class="my-chat-container">
-
+                                <div class="row">
+                                    <div class="col-12 pt-3">
+                                        <div class="col-12 pt-3 pe-5 d-flex flex-row-reverse">
+                                            <ul class="list-unstyled ">
+                                                <li class="my-container-my-message pt-2 pb-2">Hai portato a spasso il cane? </li>
+                                                <li class="my-container-my-message pt-2 pb-2">Ricordati di dargli da mangiare </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 pt-3 ps-5 d-flex">
+                                            <ul class="list-unstyled ">
+                                                <li class="my-container-user-message ps-2 pt-2 pb-2">ciao </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

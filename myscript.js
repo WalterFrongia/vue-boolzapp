@@ -94,7 +94,7 @@ var app = new Vue({
     methods: {
         selectedChat: function(index){
             this.chatIndex=index
-        }
+        },
     },
 });
 
