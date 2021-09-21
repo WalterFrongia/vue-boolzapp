@@ -115,8 +115,9 @@ body{
     height: 80%;
 }
 
-.my-received-message{
+.my-received-message>p{
     background-color: white;
+    width:40%;
     border-radius: 10px;
     font-size:15px;
     padding:20px 40px 20px 20px;
@@ -124,7 +125,13 @@ body{
 }
 
 .my-sent-message{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.my-sent-message>p{
     background-color: rgb(201, 247, 201);
+    width:40%;
     border-radius:10px;
     font-size:15px;
     padding:20px 40px 20px 20px;

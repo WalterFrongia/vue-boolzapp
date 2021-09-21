@@ -107,7 +107,7 @@
                     <!-- LAYOUT CHAT -->
                     <div class="row my-container-messages">
                         <div class="col-12">
-                            <div class="my-chat-container">
+                            <div class="my-chat-container pt-5">
                                 <div :class="(element.status == 'received' ) ? 'my-received-message' : 'my-sent-message' " v-for="(element in contacts[chatIndex].messages">
                                     <p>{{element.text}}</p>
                                 </div>
