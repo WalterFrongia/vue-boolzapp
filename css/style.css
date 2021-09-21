@@ -115,15 +115,6 @@ body{
     height: 80%;
 }
 
-.my-received-message>p{
-    background-color: white;
-    width:40%;
-    border-radius: 10px;
-    font-size:15px;
-    padding:20px 40px 20px 20px;
-    margin-bottom: 5px;
-}
-
 .my-sent-message{
     display: flex;
     justify-content: flex-end;
@@ -136,6 +127,26 @@ body{
     font-size:15px;
     padding:20px 40px 20px 20px;
     margin-bottom: 5px;
+    position: relative;
+}
+.my-received-message>p{
+    background-color: white;
+    width:40%;
+    border-radius: 10px;
+    font-size:15px;
+    padding:20px 40px 20px 20px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.my-received-message>p>span,
+.my-sent-message>p>span{
+    font-size: 10px;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    color:rgb(167, 167, 167);
+    padding:2px;
 }
 
 .my-messages-options{
