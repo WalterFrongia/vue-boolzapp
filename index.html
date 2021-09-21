@@ -123,7 +123,7 @@
                                     <i class="far fa-smile grey-color fs-5"></i>
                                 </div>
                                 <div class="col-10">
-                                    <input id="my-interactive-bar-messages" class="grey-color" type="text" placeholder="Scrivi un messaggio">
+                                    <input v-model="messageText" @keydown.enter="addMessage" id="my-interactive-bar-messages" class="grey-color" type="text" placeholder="Scrivi un messaggio">
                                 </div>
                                 <div class="col-1 d-flex justify-content-center">
                                     <i class="fas fa-microphone grey-color fs-5"></i>

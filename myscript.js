@@ -89,11 +89,24 @@ var app = new Vue({
         ],
 
         chatIndex : 0 ,
+        messageText : "",
     },
 
     methods: {
         selectedChat: function(index){
             this.chatIndex=index
+        },
+
+        addMessage: function(){
+            let chatAttiva = this.contacts[this.chatIndex].messages;
+            let newObject = {
+                date: '',
+                text: this.messageText,
+                status: 'sent',
+            };
+
+            chatAttiva.push(newObject);
+            console.log(chatAttiva);
         },
     },
 });
