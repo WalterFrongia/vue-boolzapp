@@ -73,8 +73,9 @@
                     <div class="row my-chat-section">
                         <div class="col-12 ps-0 pe-0">
                             <ul class="list-unstyled my-list-chat">
-                                <li class=" p-2 my-chat-img my-border-bottom" :class="(index == chatIndex) ? 'active' : '' " @click="selectedChat(index)" v-for ="(element, index) in contacts">
+                                <li class=" p-2 my-chat-img my-border-bottom" :class="(index == chatIndex) ? 'active' : '' " @click="selectedChat(index)" v-for ="(element, index) in contacts" >
                                     <img :src="'img/avatar' + element.avatar + '.jpg'"> {{element.name}}
+                                    <span></span>
                                 </li>
                             </ul>
                         </div>
@@ -90,7 +91,7 @@
                             <div class="row justify-content-between my-chat-nav-bar">
                                 <div class="col-6  my-img-chatting-user ">
                                     <img :src="'img/avatar' + contacts[chatIndex].avatar + '.jpg'">
-                                    <span>descrizione</span>
+                                    <span>{{contacts[chatIndex].name}}</span>
                                 </div>
 
                                 <!-- IMPOSTAZIONI CHAT -->
@@ -107,20 +108,8 @@
                     <div class="row my-container-messages">
                         <div class="col-12">
                             <div class="my-chat-container">
-                                <div class="row">
-                                    <div class="col-12 pt-3">
-                                        <div class="col-12 pt-3 pe-5 d-flex flex-row-reverse">
-                                            <ul class="list-unstyled ">
-                                                <li class="my-container-my-message pt-2 pb-2">Hai portato a spasso il cane? </li>
-                                                <li class="my-container-my-message pt-2 pb-2">Ricordati di dargli da mangiare </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-12 pt-3 ps-5 d-flex">
-                                            <ul class="list-unstyled ">
-                                                <li class="my-container-user-message ps-2 pt-2 pb-2">ciao </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                <div :class="(element.status == 'received' ) ? 'my-received-message' : 'my-sent-message' " v-for="(element in contacts[chatIndex].messages">
+                                    <p>{{element.text}}</p>
                                 </div>
                             </div>
                         </div>

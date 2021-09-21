@@ -99,7 +99,7 @@ body{
 }
 
 .my-list-chat>li.active{
-    background-color: grey;
+    background-color: rgb(219, 215, 215);
 }
 
 /* SEZIONE CHAT  */
@@ -115,7 +115,7 @@ body{
     height: 80%;
 }
 
-.my-container-user-message{
+.my-received-message{
     background-color: white;
     border-radius: 10px;
     font-size:15px;
@@ -123,7 +123,7 @@ body{
     margin-bottom: 5px;
 }
 
-.my-container-my-message{
+.my-sent-message{
     background-color: rgb(201, 247, 201);
     border-radius:10px;
     font-size:15px;
