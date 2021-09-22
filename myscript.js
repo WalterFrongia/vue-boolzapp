@@ -93,10 +93,13 @@ var app = new Vue({
     },
 
     methods: {
+
+        //FUNZIONE PER SCORRERE INDICE ARRAY
         selectedChat: function(index){
             this.chatIndex=index
         },
 
+        //FUNZIONE PER VISUALIZZARE CHAT ATTIVA, CON IMPLEMENTAZIONE TIME FUNCTION
         addMessage: function(){
             let chatAttiva = this.contacts[this.chatIndex].messages;
             let today = new Date();
@@ -111,6 +114,7 @@ var app = new Vue({
             };
 
             chatAttiva.push(newObject);
+            this.messageText = "";
             console.log(chatAttiva);
 
             let secondi = 1000;
@@ -125,6 +129,12 @@ var app = new Vue({
                 chatAttiva.push(receivedMessage);
                 console.log(chatAttiva);
             };
+
+        },
+
+        getLastMessage: function(index){
+            let messages = this.contacts[index].messages
+            return messages[messages.length-1];
 
         },
     },
