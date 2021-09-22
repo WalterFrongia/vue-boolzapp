@@ -90,6 +90,7 @@ var app = new Vue({
 
         chatIndex : 0 ,
         messageText : "",
+        messageReceived : "ok",
     },
 
     methods: {
@@ -112,6 +113,20 @@ var app = new Vue({
 
             chatAttiva.push(newObject);
             console.log(chatAttiva);
+
+            let secondi = 1000;
+            setTimeout (tempoRisposta, secondi);
+
+            function tempoRisposta(){
+                let receivedMessage = {
+                    date: dd + '/' + mm + '/' + yyyy,
+                    text: this.messageReceived,
+                    status: 'received',
+                };
+                chatAttiva.push(receivedMessage);
+                console.log(chatAttiva);
+            };
+
         },
     },
 });
