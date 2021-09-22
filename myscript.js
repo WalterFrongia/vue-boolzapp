@@ -90,7 +90,6 @@ var app = new Vue({
 
         chatIndex : 0 ,
         messageText : "",
-        messageReceived : "ok",
     },
 
     methods: {
@@ -120,7 +119,7 @@ var app = new Vue({
             function tempoRisposta(){
                 let receivedMessage = {
                     date: dd + '/' + mm + '/' + yyyy,
-                    text: this.messageReceived,
+                    text: "ok",
                     status: 'received',
                 };
                 chatAttiva.push(receivedMessage);
