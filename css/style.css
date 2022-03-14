@@ -30,6 +30,10 @@ i{
     height: 80%;
 }
 
+.my-padding{
+    padding-left:60px;
+}
+
 /* LAYOUT WEB APP */
 
 
@@ -101,6 +105,10 @@ i{
     overflow-y:scroll;
 }
 
+.my-chat-date{
+    position: relative;
+}
+
 .my-list-chat>li:hover{
     background-color: rgb(219, 215, 215);
     cursor: pointer;
@@ -166,4 +174,12 @@ i{
     width:100%;
     border-radius:2px;
     border:none;
+}
+
+#my-date-message{
+    position:absolute;
+    right: 5px;
+    bottom: 5px;
+
+    font-size: 12px;
 }

@@ -70,7 +70,7 @@ var app = new Vue({
                 ],
             },
             {
-                name: 'Luisa',
+                name: 'Riccardo',
                 avatar: '_4',
                 visible: true,
                 messages: [
@@ -106,9 +106,13 @@ var app = new Vue({
             let dd = String(today.getDate()).padStart(2, '0');
             let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
             let yyyy = today.getFullYear();
+            let hour = today.getHours();
+            let minute = today.getMinutes();
+            let second = today.getSeconds();
 
             let newObject = {
                 date: dd + '/' + mm + '/' + yyyy,
+                time: hour + ':' + minute + ':' + second,
                 text: this.messageText,
                 status: 'sent',
             };
@@ -123,6 +127,7 @@ var app = new Vue({
             function tempoRisposta(){
                 let receivedMessage = {
                     date: dd + '/' + mm + '/' + yyyy,
+                    time: hour + ':' + minute + ':' + second,
                     text: "ok",
                     status: 'received',
                 };

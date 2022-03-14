@@ -37,7 +37,7 @@
                     <div class="row d-flex align-items-center justify-content-between pt-2 pb-2 my-container-grey my-border-right">
                         <div class="col-6 my-img-user">
                             <img src="img/avatar_io.jpg" alt="">
-                            <span>Nome Utente</span>
+                            <span>Luisa</span>
                         </div>
 
                         <!-- ICONE IMPOSTAZIONI UTENTE -->
@@ -73,10 +73,11 @@
                     <div class="row my-chat-section">
                         <div class="col-12 ps-0 pe-0">
                             <ul class="list-unstyled my-list-chat">
-                                <li class=" p-2 my-chat-img my-border-bottom" :class="(index == chatIndex) ? 'active' : '' " @click="selectedChat(index)" v-for ="(element, index) in contacts" >
-                                    <img :src="'img/avatar' + element.avatar + '.jpg'"> {{element.name}}
-                                    <span>{{getLastMessage(index).text}}</span>
-                                    <span>{{getLastMessage(index).date}}</span>
+                                <li class=" p-2 my-chat-img my-border-bottom my-chat-date" :class="(index == chatIndex) ? 'active' : '' " @click="selectedChat(index)" v-for ="(element, index) in contacts" >
+                                    <img :src="'img/avatar' + element.avatar + '.jpg'">
+                                    <span class="">{{element.name}}:</span>
+                                    <span class="grey-color">{{getLastMessage(index).text}}</span>
+                                    <span class="grey-color"id="my-date-message">{{getLastMessage(index).date}}</span>
                                 </li>
                             </ul>
                         </div>
@@ -110,7 +111,7 @@
                         <div class="col-12">
                             <div class="my-chat-container pt-5">
                                 <div :class="(element.status == 'received' ) ? 'my-received-message' : 'my-sent-message' " v-for="(element in contacts[chatIndex].messages">
-                                    <p>{{element.text}} <span>{{element.date}}</span></p>
+                                    <p>{{element.text}} <span>{{element.date}} {{element.time}}</span></p>
                                 </div>
                             </div>
                         </div>
